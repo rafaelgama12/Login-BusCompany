@@ -22,7 +22,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(http://localhost/background.png) no-repeat center;
+    background: url(http://localhost/github/Login-BusCompany/background.png) no-repeat center;
     background-size: cover;
   }
 /* No corpo (background) da página,fora do container. */
@@ -33,7 +33,7 @@ body {
     max-width:525px;
     min-height:670px;
     position:relative;
-    background:url(http://localhost/background2.png) no-repeat center;
+    background:url(http://localhost/github/Login-BusCompany/background2.png) no-repeat center;
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 /* Background somente do container.  */
