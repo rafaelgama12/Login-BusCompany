@@ -16,7 +16,7 @@ This login page code provides a user-friendly interface for users to log in or r
 
 1. Clone the repository to your local machine.
 2. Set up a web server (e.g., Apache, Nginx) and configure it to serve the project's files.
-3. Create a MySQL/MariaDB database and import the `table_users.sql` schema to create the necessary table.
+3. Create a MySQL/MariaDB database and import the table `users_table.sql` schema to create the necessary table.
 4. Update the database connection details in the PHP scripts to match your database configuration.
 5. Open the project in a web browser.
 
@@ -35,12 +35,13 @@ The `users_table` table stores user information for authentication and subscript
 
 ### `users_table`
 
-| Column       | Data Type    | Description                      |
-|--------------|--------------|----------------------------------|
-| id           | INT (PK)     | User ID                          |
-| username     | VARCHAR(20)  | User's chosen username           |
-| email        | VARCHAR(50)  | User's email address             |
-| password     | VARCHAR(15)  | Hashed password for auth         |
+| Column | Type         | Description
+|-------|---------------|--
+| login | varchar(20)   | Users ID
+| pswd  | varchar(15)   | Hashed password for auth 
+| name  | varchar(30)   | User's chosen username 
+| email | varchar(50)   | User's email address 
+
 
 ## Acknowledgments
 
