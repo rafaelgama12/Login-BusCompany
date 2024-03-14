@@ -7,7 +7,7 @@ This login page code provides a user-friendly interface for users to log in or r
 ## Features
 
 - Login and Subscribe Options: Users can choose between logging in with existing credentials or subscribing by providing new information.
-- Flip Animation: When a user clicks on the login or subscribe button, the screen will flip to reveal the corresponding form, providing an engaging visual effect.
+- Flip Animation: When a user clicks on the login or subscribe button, the screen will flip to reveal the corresponding form, providing an engaging visual effect..
 - User Authentication:
   - **Login**: User-provided login credentials are sent to a PHP script for verification.
   - **Subscription**: User-provided data is collected and stored in a MySQL/MariaDB database through a PHP script.
