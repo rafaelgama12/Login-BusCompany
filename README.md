@@ -36,7 +36,7 @@ The `users_table` table stores user information for authentication and subscript
 ### `users_table`
 
 | Column | Type         | Description
-|-------|---------------|--
+|-------|---------------|------------
 | login | varchar(20)   | Users ID
 | pswd  | varchar(15)   | Hashed password for auth 
 | name  | varchar(30)   | User's chosen username 
