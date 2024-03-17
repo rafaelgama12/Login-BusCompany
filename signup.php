@@ -1,38 +1,35 @@
 <?php
-// Verifica se o formulário foi enviado
+// Check if the POST METHOD was used
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Conexão com o banco de dados (substitua os valores conforme sua configuração)
+    // Than make connection with your database
     $servername = "127.0.0.1";
     $username = "root";
     $password = "senha";
     $dbname = "database";
     $conn = new mysqli($servername, $username, $password, $dbname);
-    // Verifica se a conexão foi estabelecida com sucesso
     if ($conn->connect_error) {
-        die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+        die("Something is wrong with the credentials in DB, check: " . $conn->connect_error);
     }
 
-    // Prepara as variáveis ​​do formulário para inserção no banco de dados
+    // Retrieve user input values from a form submitted via POST method.
     $username = $_POST["username"];
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm_password"];
     $email = $_POST["email"];
 
-    // Verifica se a senha informada e a confirmação de senha são iguais
+    // Don't make changes if it is incorrect
     if ($password != $confirm_password) {
-        die("A senha e a confirmação de senha não são iguais.");
+        die("Check the password.");
     }
 
-    // Insere o novo usuário na tabela 'users_table'
+    // Insert the new user in the 'users_table'
     $sql = "INSERT INTO users_table (login, pswd, email) VALUES ('$username', '$password', '$email')";
     if ($conn->query($sql) === TRUE) {
         echo "Usuário cadastrado com sucesso.";
     } else {
         echo "Erro ao cadastrar o usuário: " . $conn->error;
     }
-    // substitua users_table por sua tabela, desde que, tenha as mesmas especificações.
 
-    // Fecha a conexão com o banco de dados
     $conn->close();
 }
 ?>
