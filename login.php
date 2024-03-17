@@ -1,39 +1,38 @@
 <?php
-// Conexão com o banco de dados
+// Make connection with database
 $servername = "127.0.0.1";
 $username = "root";
 $password = "senha";
 $dbname = "database";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifique se a conexão foi bem-sucedida
+// Check if it was a good connection
 if ($conn->connect_error) {
     die("Failed to connect in the database: " . $conn->connect_error);
 }
 
-// Obtém os valores do formulário de login
+// Take values of username and password
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Consulta SQL para verificar o usuário e a senha na tabela
+// Check the SQL database with the given name and password
 $sql = "SELECT * FROM users_table WHERE login='$username' AND pswd='$password'";
 $result = $conn->query($sql);
-// Substitua z_sec_users por sua tabela no banco de dados. 
+// Make sure to put the right name of the table in SQL database. 
 
-// Verifica se o login foi bem-sucedido ou não
+// Check if it was a good connection in database
 if ($result->num_rows > 0) {
-    // Login bem-sucedido, redirecionar para a página inicial ou exibir uma mensagem de sucesso
+    // This its what happen when the login succeed.
     echo "Welcome!";
     header("Location: http://localhost/Login-BusCompany/homepage.html");
-    // Nesse caso, direciona para a página de cadastro de acidentes.
 
 } else {
-    // Login falhou, redirecionar de volta ao formulário de login ou exibir uma mensagem de erro
+    // Error message if not pass
     echo '<script>
     alert("Check your username or password!, something is wrong!");
     </script>';
 }
 
-// Fecha a conexão com o banco de dados
+// End the connection in database
 $conn->close();
 ?>
