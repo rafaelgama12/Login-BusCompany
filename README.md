@@ -35,7 +35,7 @@ The `users_table` table stores user information for authentication and subscript
 
 ### `users_table`
 
-| Column | Data Type         | Description
+| Column | Data Type    | Description
 |-------|---------------|------------
 | login | varchar(20)   | Users ID
 | pswd  | varchar(15)   | Hashed password for auth 
@@ -48,3 +48,5 @@ The `users_table` table stores user information for authentication and subscript
 - The flip animation is based on CSS transitions and transforms.
 - PHP is used for server-side scripting and database interaction.
 - MySQL/MariaDB is used to store user data.
+
+<img src="page_animation.gif">
