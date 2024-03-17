@@ -25,11 +25,14 @@ This login page code provides a user-friendly interface for users to log in or r
 ### File Structure
 
 - `index.html`: The main HTML file containing the login page structure and flip animation triggers.
+- `homepage.html.`: A simple HTML with text that simbolizes the homepage before the login succeed. 
 - `login.php`: PHP script to verify user login credentials against the database.
 - `signup.php`: PHP script to handle user subscription data and store it in the database.
 - `users_table.sql`: SQL schema file to create the table for users in the database.
 - `login.css`: The file with CSS content for styling the login page and animation.
 - `background.css`: The file containing different ways to change the background image for the CSS style in the page.
+- `_background.jpg`: The background image to use in the login page.
+
 
 ## Database Schema
 
