@@ -4,6 +4,8 @@ This project is a login page implementation that includes a flip animation effec
 
 This login page code provides a user-friendly interface for users to log in or register. The use of HTML, CSS, and PHP allows for seamless handling of user authentication and registration.
 
+<img src="img/page_animation.gif">
+
 ## Features
 
 - Login and Subscribe Options: Users can choose between logging in with existing credentials or subscribing by providing new information.
@@ -48,5 +50,3 @@ The `users_table` table stores user information for authentication and subscript
 - The flip animation is based on CSS transitions and transforms.
 - PHP is used for server-side scripting and database interaction.
 - MySQL/MariaDB is used to store user data.
-
-<img src="img/page_animation.gif">
