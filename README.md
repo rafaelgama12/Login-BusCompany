@@ -49,4 +49,4 @@ The `users_table` table stores user information for authentication and subscript
 - PHP is used for server-side scripting and database interaction.
 - MySQL/MariaDB is used to store user data.
 
-<img src="page_animation.gif">
+<img src="img/page_animation.gif">
