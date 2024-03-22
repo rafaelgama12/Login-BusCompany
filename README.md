@@ -5,7 +5,7 @@ This project is a login page implementation that includes a flip animation effec
 This login page code provides a user-friendly interface for users to log in or register. The use of HTML, CSS, and PHP allows for seamless handling of user authentication and registration.
 
 <img src="img/page_animation.gif">
-<small><i>Figura 1: Imagem animada da página inicial funcionando.</i></small>
+<small><i>Figure 1: A animated gif from the initial page working.</i></small>
 
 ## Features
 
